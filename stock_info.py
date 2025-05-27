@@ -2,7 +2,7 @@ import yfinance as yf
 import pandas as pd
 
 class Stock:
-    def init(self, symbol):
+    def __init__(self, symbol):
         self.symbol = symbol
         self.ticker = yf.Ticker(symbol)
 
